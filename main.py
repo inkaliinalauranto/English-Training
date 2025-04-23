@@ -1,4 +1,4 @@
-from function import from_english_to_finnish, from_finnish_to_english
+from functions import from_english_to_finnish, from_finnish_to_english
 
 
 def main():
