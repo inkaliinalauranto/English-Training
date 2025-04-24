@@ -52,11 +52,11 @@ from data import word_pairs
 #     print(f"Valmista tuli! Vastasit oikein {points}/{len(word_pairs)}")
 
 
-def from_finnish_to_english():
+def from_finnish_to_english(word_pair_list=word_pairs):
     print("Käännä sanat englanniksi")
     print("------------------------------", end="\n")
     points = 0
-    for pairs in word_pairs:
+    for pairs in word_pair_list:
         finnish_words = ""
         count = 0
         while count < len(pairs[1]):
@@ -85,14 +85,14 @@ def from_finnish_to_english():
                 print(pairs[0][count], end=", ")
             count += 1
         print()
-    print(f"Valmista tuli! Vastasit oikein {points}/{len(word_pairs)}")
+    print(f"Valmista tuli! Vastasit oikein {points}/{len(word_pair_list)}")
 
 
-def from_english_to_finnish():
+def from_english_to_finnish(word_pair_list=word_pairs):
     print("Käännä sanat suomeksi")
     print("------------------------------", end="\n")
     points = 0
-    for pairs in word_pairs:
+    for pairs in word_pair_list:
         english_words = ""
         count = 0
         while count < len(pairs[0]):
@@ -121,4 +121,5 @@ def from_english_to_finnish():
                 print(pairs[1][count], end=", ")
             count += 1
         print()
-    print(f"Valmista tuli! Vastasit oikein {points}/{len(word_pairs)}")
+    print(f"Valmista tuli! Vastasit oikein {points}/{len(word_pair_list)}")
+
